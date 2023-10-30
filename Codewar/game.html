@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visual Novel Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="text-box">
+            <p id="text">เนื้อเรื่องจะปรากฏที่นี่</p>
+        </div>
+        <div id="choices">
+            <button id="choice1">ตัวเลือกที่ 1</button>
+            <button id="choice2">ตัวเลือกที่ 2</button>
+        </div>
+    </div>
+    <script src="script.js">
+        const textElement = document.getElementById('text');
+        const choice1Element = document.getElementById('choice1');
+        const choice2Element = document.getElementById('choice2');
+
+        choice1Element.addEventListener('click', () => {
+            textElement.textContent = 'คุณเลือกตัวเลือกที่ 1';
+            // สามารถเพิ่มโค้ดเพิ่มเติมที่นี่เพื่อแสดงเนื้อเรื่องต่อ
+        });
+
+        choice2Element.addEventListener('click', () => {
+            textElement.textContent = 'คุณเลือกตัวเลือกที่ 2';
+            // สามารถเพิ่มโค้ดเพิ่มเติมที่นี่เพื่อแสดงเนื้อเรื่องต่อ
+        });
+
+    </script>
+</body>
+
+</html>

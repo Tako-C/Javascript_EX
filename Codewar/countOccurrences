@@ -1,0 +1,9 @@
+const numbers = [1, 2, 3, 4, 2, 5, 2, 6, 2, 7];
+const targetNumber = 2;
+function countOccurrences(numbers, targetNumber) {
+    return numbers.map(num => num === targetNumber).reduce((total, curr) => total + curr, 0);
+}
+
+
+console.log(countOccurrences(numbers, targetNumber))
+console.log(`ตัวเลข ${targetNumber} ปรากฏในอาร์เรย์ ${countOccurrences(numbers, targetNumber)} ครั้ง`);
